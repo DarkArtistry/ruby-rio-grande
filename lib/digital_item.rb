@@ -2,17 +2,19 @@
 class DigitalItem < Item
   def initialize(name,price)
     super(name,price)
+    @quantity = 1
   end
   def sell(amount)
     if @quantity >= amount
+      @quantity -= amount
       true
     else
-      falsegit
+      false
     end
   end
 
   def stock(amount)
-    @quantity += amount
+    @quantity += amoungit
     true
   end
 

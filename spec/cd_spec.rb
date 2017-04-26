@@ -3,7 +3,7 @@ require_relative '../lib/cd'
 
 describe Cd do
   before(:context) do
-    # initialize item
+    @cd = Cd.new('Say my name', 7.00, tracks, artist, runtime)
   end
 
   # check initialization

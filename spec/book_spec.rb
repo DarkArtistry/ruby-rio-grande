@@ -56,4 +56,21 @@ describe Book do
       expect(@book.author).to eq('John Milton')
     end
   end
+
+  describe 'methods' do
+    it 'check if you can sell when there is no quantity' do
+      expect(@book.sell(1)).to eq false
+    end
+
+    it 'check if you are able to add stock' do
+      @book.add(1)
+      expect(@book.quantity).to eq 1
+    end
+
+    it 'check if are able to sell' do
+      @book.sell(1)
+      expect(@book.quantity).to eq 0
+    end
+  end
+
 end

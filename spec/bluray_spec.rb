@@ -40,17 +40,17 @@ describe 'getters and setters' do
   end
 
   it 'assigns and reads the runtime' do
-    @b1.run_time = 60
+    @b1.runtime = 60
     expect(@b1.runtime).to eq(60)
   end
 
   it 'assigns and reads the director' do
     @b1.director = 'Mitchell'
-    expect(@b1.author).to eq('Mitchell')
+    expect(@b1.director).to eq('Mitchell')
   end
   it 'assigns and reads the producer' do
     @b1.producer = 'Rey'
-    expect(@b1.author).to eq('Rey')
+    expect(@b1.producer).to eq('Rey')
   end
 end
 describe 'Methods' do

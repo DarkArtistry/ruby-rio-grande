@@ -63,7 +63,7 @@ describe Book do
     end
 
     it 'check if you are able to add stock' do
-      @book.add(1)
+      @book.stock(1)
       expect(@book.quantity).to eq 1
     end
 
